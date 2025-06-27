@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SmartBot - Dialogflow Chatbot</title>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: #e6f7ff;
+        --df-messenger-button-titlebar-color: #1e88e5;
+        --df-messenger-chat-background-color: #f5f5f5;
+        --df-messenger-font-color: black;
+        --df-messenger-user-message: #dcedc8;
+        position: fixed;
+        bottom: 16px;
+        right: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align:center; font-family:sans-serif;">🤖 Welcome to SmartBot!</h2>
+    <p style="text-align:center;">Ask me about school info, fun facts, or a dose of motivation!</p>
+
+    <df-messenger
+      intent="WELCOME"
+      chat-title="SmartBot"
+      agent-id="d23e5970-9090-45e3-95a9-957051a86b99"
+      language-code="en">
+    </df-messenger>
+  </body>
+</html>
